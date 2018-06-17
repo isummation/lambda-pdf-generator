@@ -1,0 +1,15 @@
+{
+  "name": "pdfgenerator",
+  "version": "1.0.0",
+  "description": "Generate PDF from URL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pritesh Patel <pritesh@isummation.com>",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^1.1.1",
+    "tar": "^4.0.1"
+  }
+}

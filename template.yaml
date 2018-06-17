@@ -1,0 +1,21 @@
+AWSTemplateFormatVersion : '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Resources:
+  GeneratePDF:
+    Type: "AWS::Serverless::Function"
+    Properties:
+      Runtime: nodejs8.10
+      Handler: index.handler
+      Policies: AmazonS3FullAccess
+      Environment:
+        Variables: 
+          S3_BUCKET: [s3_bucket]
+          TIMEOUT: 300000
+      Timeout: 300
+      MemorySize: 1024
+      Events:
+        PdfGenerate:
+          Type: Api
+          Properties:
+            Path: /generatepdf
+            Method: post
