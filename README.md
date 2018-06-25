@@ -21,7 +21,7 @@ Parameters compress and sns_arn are optional and pass only if needed.
 * Lambda has certain limitation in terms of timeout (allow maximum 5 minutes) and package size. Please read article [AWS Lambda limits](https://docs.aws.amazon.com/lambda/latest/dg/limits.html#limits-list) for detail. `npm install` will also download chromium for your development OS which may exceed size requirements for lambda. This package already include puppeteer build for amazon linux so you can remove build downloaded while `npm install`. You may find it in `node_modules\puppeteer\.local-chromium`.
 
 # How To Run on local
-Read [Blog](https://github.com/isummation/lambda-pdf-generator)
+Read [Blog](http://www.isummation.com/blog/using-aws-lambda-to-generate-pdf/)
 
 # Credits
 This project uses and take references from following projects and articles and greatly thankful for their hard work.
