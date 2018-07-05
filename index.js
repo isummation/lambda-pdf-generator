@@ -39,7 +39,7 @@ const compressGostScript = async(outputFile,inputFile) => {
           console.log('exec error: ' + error);
           reject(error);
         }
-        resolve(destFile);
+        resolve(outputFile);
       });
   });
 }
